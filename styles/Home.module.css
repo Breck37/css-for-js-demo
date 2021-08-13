@@ -113,6 +113,13 @@
   margin-left: 0.5rem;
 }
 
+.nobullet {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -17,10 +17,22 @@ export default function Home() {
 
         <div>
           <h4>Table of Contents</h4>
-          <Link href="/next-home-page">Rendering Logic 1</Link>
-          <Link href="/next-home-page">Rendering Logic 2</Link>
-          <Link href="/next-home-page">Modern Component Architecture</Link>
-          <Link href="/next-home-page">Flexbox</Link>
+          <ul>
+            <li className={styles.nobullet}>
+            <Link href="/modules/rendering-one">Rendering Logic 1</Link>
+            </li>
+            <li className={styles.nobullet}>
+            <Link href="/modules/rendering-two">Rendering Logic 2</Link>
+            </li>
+            <li className={styles.nobullet}>
+            <Link href="/modules/modern-architecture">
+              Modern Component Architecture
+            </Link>
+            </li>
+            <li className={styles.nobullet}>
+            <Link href="/modules/flex">Flexbox</Link>
+            </li>
+          </ul>
         </div>
       </main>
     </div>
