@@ -33,4 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-/pages/next-home-page
+/pages/next-home-page.js
