@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import LinkItem from '../components/LinkItem';
 
 export default function Home() {
   return (
@@ -12,16 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Css for Javascript Developers</h1>
+      <main className={styles.main}>
+        <h1>Css for <strong>Javascript</strong> Developers</h1>
 
         <div>
           <h4>Table of Contents</h4>
           <ul className={styles.nobullet}>
-            <li>
-            <Link href="/modules/rendering-one">Rendering Logic 1</Link>
-            </li>
-            <li>
+            <LinkItem label="Rendering Logic 1" route="/modules/rendering-one" />
+            {/* <li>
             <Link href="/modules/rendering-two">Rendering Logic 2</Link>
             </li>
             <li>
@@ -30,8 +28,8 @@ export default function Home() {
             </Link>
             </li>
             <li>
-            <Link href="/modules/flex">Flexbox</Link>
-            </li>
+            <Link href="/modules/flex">Flexbox</Link> 
+            </li>*/}
           </ul>
         </div>
       </main>
