@@ -1,11 +1,7 @@
-import React, { useEffect, useMemo, useCallback, useState } from 'react'
-
+import React, { useEffect, useMemo, useCallback, useState } from "react";
 
 const ModernArchitecture = () => {
-return (
-<div>ModernArchitecture</div>
-);
+  return <div>ModernArchitecture</div>;
 };
 
-
-export default ModernArchitecture
+export default ModernArchitecture;
