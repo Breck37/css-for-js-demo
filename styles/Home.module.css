@@ -1,20 +1,30 @@
 .container {
+  height: 100vh;
   min-height: 100vh;
+  width: 100vw;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+
+.main > h1 > strong {
+  font-style: italic;
+  color: #454dcc;
+  font-weight: 700;
+}
+
+.main > div {
+  width: 100%;
 }
 
 .footer {
@@ -116,9 +126,17 @@
 .nobullet {
   text-decoration: none;
   list-style-type: none;
-  padding-left: 16px;
+  padding-left: 0;
 }
 
+.nobullet li:first-child:hover {
+    background-color: #454dcc;
+    color: white;
+}
+.nobullet li:nth-child(2):hover {
+    background-color: red;
+    color: white;
+}
 
 
 @media (max-width: 600px) {
