@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../../styles/Components.module.css";
-import { ModuleCard } from "../../../../components/ModuleCard";
+import { ModuleCard } from "../ModuleCard";
 
 export const BoxModel = ({ onClick, selected }) => {
   return (
