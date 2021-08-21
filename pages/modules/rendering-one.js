@@ -8,7 +8,7 @@ import {
   FlowLayout,
   Inheritance,
   MarginCollapse,
-} from "./r1/rendering-one";
+} from "../../components/r1";
 
 const RenderingOne = () => {
   const [selected, setSelected] = useState("");
