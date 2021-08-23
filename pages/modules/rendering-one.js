@@ -18,7 +18,6 @@ const RenderingOne = () => {
   };
 
   const handlePick = (selectedTopic) => {
-    console.log({ selectedTopic });
     setSelected(selectedTopic);
   };
 
@@ -68,10 +67,10 @@ const ROneStyled = styled.div`
   }
 
   > div {
-    height: calc(100% - 82px);
+    // height: calc(100% - 82px);
 
     > ul {
-      height: 100%;
+      height: calc(100% - 6rem);
       overflow-y: scroll;
       scrollbar-width: none;
       display: grid;
