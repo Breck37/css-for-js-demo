@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useCallback, useState } from "react";
 import Link from "next/link";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const LinkItem = ({ label, route }) => {
   return (
@@ -17,6 +17,7 @@ const LinkItemStyled = styled.li`
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 5px 10px 25px -7px rgba(0,0,0,1);
+  box-shadow: 5px 10px 25px -7px rgba(0, 0, 0, 1);
   padding: 2rem;
+  margin-bottom: 1.5rem;
 `;
