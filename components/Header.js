@@ -1,15 +1,20 @@
 import React, { useEffect, useMemo, useCallback, useState } from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import styled from "styled-components";
 
 const Header = () => {
-  return <HeaderStyled>
-    <h1>CSS For JS Devs</h1>
-    <div>
+  return (
+    <HeaderStyled>
+      <h1>
+        CSS For <strong>Javascript</strong> Devs
+      </h1>
       <div>
-        <Link href="/">Home</Link></div>
-    </div>
-  </HeaderStyled>;
+        <div>
+          <Link href="/">Home</Link>
+        </div>
+      </div>
+    </HeaderStyled>
+  );
 };
 
 export default Header;
@@ -27,6 +32,11 @@ const HeaderStyled = styled.div`
 
   > h1 {
     margin: 0;
+
+    > strong {
+      color: #454dcc;
+      font-style: italic;
+    }
   }
 
   > div {
