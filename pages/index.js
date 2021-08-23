@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import LinkItem from "../components/LinkItem";
+import Page from "../components/Page";
 
 export default function Home() {
   return (
@@ -12,32 +13,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1>
-          Css for <strong>Javascript</strong> Developers
-        </h1>
-
-        <div>
+      <Page>
+        <div className={styles["table-of-contents"]}>
           <h4>Table of Contents</h4>
           <ul className={styles.nobullet}>
             <LinkItem
               label="Rendering Logic 1"
               route="/modules/rendering-one"
             />
-            {/* <li>
-            <Link href="/modules/rendering-two">Rendering Logic 2</Link>
-            </li>
-            <li>
-            <Link href="/modules/modern-architecture">
-              Modern Component Architecture
-            </Link>
-            </li>
-            <li>
-            <Link href="/modules/flex">Flexbox</Link> 
-            </li>*/}
+            <LinkItem label="Rendering Logic 2" route="/" comingSoon={true} />
+            <LinkItem
+              label="Modern Component Architecture"
+              route="/"
+              comingSoon={true}
+            />
+            <LinkItem label="Flexbox" route="/" comingSoon={true} />
+            <LinkItem
+              label="Responsive and Behavioural CSS"
+              route="/"
+              comingSoon={true}
+            />
+            <LinkItem
+              label="Typography and Images"
+              route="/"
+              comingSoon={true}
+            />
+            <LinkItem label="CSS Grid" route="/" comingSoon={true} />
+            <LinkItem label="Animations" route="/" comingSoon={true} />
           </ul>
         </div>
-      </main>
+      </Page>
     </div>
   );
 }
