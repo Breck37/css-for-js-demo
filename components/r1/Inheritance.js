@@ -1,22 +1,9 @@
 import React from "react";
 import styles from "../../styles/Components.module.css";
-import styled from "styled-components";
 import { ModuleCard } from "../ModuleCard";
 
 const InnerInheritance = () => {
-  return (
-    <InnerWrap>
-      <div>Content</div>
-    </InnerWrap>
-  );
-};
-
-const InheritanceCard = () => {
-  return (
-    <div className={`${styles.card_container} title`}>
-      <div>Inheritance</div>
-    </div>
-  );
+  return <div>Inheritance</div>;
 };
 
 export const Inheritance = ({ onClick, selected }) => {
@@ -25,14 +12,11 @@ export const Inheritance = ({ onClick, selected }) => {
       onClick={onClick}
       topic="inheritance"
       selected={selected}
-      children={<InheritanceCard />}
       innerChildren={<InnerInheritance />}
-    />
+    >
+      <div className={styles.card_container}>Inheritance Coming Soon</div>
+    </ModuleCard>
   );
 };
 
 export default Inheritance;
-
-const InnerWrap = styled.div`
-  height: 200%;
-`;
