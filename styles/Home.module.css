@@ -1,30 +1,10 @@
 .container {
-  height: 100vh;
   min-height: 100vh;
   width: 100vw;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.main {
-  padding: 5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
-.main > h1 > strong {
-  font-style: italic;
-  color: #454dcc;
-  font-weight: 700;
-}
-
-.main > div {
-  width: 100%;
 }
 
 .footer {
@@ -34,6 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.table-of-contents {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .footer a {
@@ -130,14 +116,13 @@
 }
 
 .nobullet li:first-child:hover {
-    background-color: #454dcc;
-    color: white;
+  background-color: #454dcc;
+  color: white;
 }
 .nobullet li:nth-child(2):hover {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
-
 
 @media (max-width: 600px) {
   .grid {
