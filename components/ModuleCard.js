@@ -23,7 +23,7 @@ export const ModuleCard = ({
       <CloseWrap selected={selected} onClick={handleReset}>
         <Close />
       </CloseWrap>
-      <>{children}</>
+      <ChildrenWrap selected={selected}>{children}</ChildrenWrap>
       <ContentWrap selected={selected}>
         <InnerWrap>{innerChildren}</InnerWrap>
       </ContentWrap>
@@ -59,6 +59,10 @@ const ModuleCardStyled = styled.li`
   &:hover {
     transform: ${({ selected }) => (selected ? "none" : "scale(1.02)")};
   }
+`;
+
+const ChildrenWrap = styled.div`
+  display: ${({ selected }) => (selected ? "none" : "block")};
 `;
 
 const CloseWrap = styled.div`
