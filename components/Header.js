@@ -23,7 +23,6 @@ const HeaderStyled = styled.div`
   position: relative;
   height: 6rem;
   width: 100vw;
-  margin: 0 -2rem;
   border-bottom: 2px solid #454dcc;
   padding: 3rem 2rem 1rem;
   display: flex;
