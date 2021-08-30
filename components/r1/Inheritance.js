@@ -14,7 +14,7 @@ export const Inheritance = ({ onClick, selected }) => {
       selected={selected}
       innerChildren={<InnerInheritance />}
     >
-      <div className={styles.card_container}>Inheritance Coming Soon</div>
+      <div className={styles.card_container}>Inheritance</div>
     </ModuleCard>
   );
 };
