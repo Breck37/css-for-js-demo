@@ -20,6 +20,7 @@
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
+  padding: 0 2rem;
 }
 
 .footer a {
@@ -115,13 +116,33 @@
   padding-left: 0;
 }
 
-.nobullet li:first-child:hover {
+.nobullet li {
+  position: relative;
+}
+
+.nobullet li:hover {
   background-color: #454dcc;
   color: white;
+  display: flex;
 }
-.nobullet li:nth-child(2):hover {
-  background-color: red;
-  color: white;
+
+.nobullet li > div {
+  display: none;
+}
+
+.nobullet li:hover > div {
+  display: block;
+  position: absolute;
+  color: #fff;
+  width: 66%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 @media (max-width: 600px) {
