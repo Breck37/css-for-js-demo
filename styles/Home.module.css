@@ -1,7 +1,6 @@
 .container {
   min-height: 100vh;
   width: 100vw;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,35 +113,6 @@
   text-decoration: none;
   list-style-type: none;
   padding-left: 0;
-}
-
-.nobullet li {
-  position: relative;
-}
-
-.nobullet li:hover {
-  background-color: #454dcc;
-  color: white;
-  display: flex;
-}
-
-.nobullet li > div {
-  display: none;
-}
-
-.nobullet li:hover > div {
-  display: block;
-  position: absolute;
-  color: #fff;
-  width: 66%;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  font-size: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 @media (max-width: 600px) {

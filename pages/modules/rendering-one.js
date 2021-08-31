@@ -61,6 +61,7 @@ const ROneStyled = styled.div`
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
+  padding: 0 2rem;
 
   ::-webkit-scrollbar {
     display: none;
