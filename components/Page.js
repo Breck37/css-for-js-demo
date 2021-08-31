@@ -14,7 +14,7 @@ export default function Page({ children }) {
 const PageStyled = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 2rem 0 0;
+  padding-top: 2rem;
 `;
 
 const Container = styled.div`

@@ -4,12 +4,14 @@ import styled from "styled-components";
 
 const LinkItem = ({ label, route, comingSoon }) => {
   return (
-    <LinkItemStyled comingSoon={comingSoon}>
-      <Link href={route}>{label}</Link>
-      {comingSoon ? (
-        <div className="coming-soon-banner">COMING SOON</div>
-      ) : null}
-    </LinkItemStyled>
+    <Link href={route}>
+      <LinkItemStyled comingSoon={comingSoon}>
+        {label}{" "}
+        {comingSoon ? (
+          <div className="coming-soon-banner">COMING SOON</div>
+        ) : null}
+      </LinkItemStyled>
+    </Link>
   );
 };
 
@@ -17,11 +19,11 @@ export default LinkItem;
 
 const LinkItemStyled = styled.li`
   cursor: pointer;
-  width: calc(100% - 4rem);
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 5px 10px 25px -7px rgba(0, 0, 0, 1);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2rem;
-  margin: 0 2rem 1.5rem;
-  position: relative:
+  position: relative;
+  margin: 0 1rem 1.5rem;
 `;
