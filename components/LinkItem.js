@@ -19,6 +19,7 @@ export default LinkItem;
 
 const LinkItemStyled = styled.li`
   cursor: pointer;
+  position: relative;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -26,4 +27,30 @@ const LinkItemStyled = styled.li`
   padding: 2rem;
   position: relative;
   margin: 0 1rem 1.5rem;
+
+  &:hover {
+    background-color: ${({ comingSoon }) =>
+      !comingSoon ? "#454dcc" : "rgba(69, 77, 204, 0.6)"};
+    color: white;
+    display: flex;
+
+    > div {
+      display: block;
+      position: absolute;
+      color: #fff;
+      width: 66%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+  }
+
+  > div {
+    display: none;
+  }
 `;
