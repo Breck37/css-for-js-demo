@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import styled from "styled-components";
 import { Close } from "./icons";
@@ -8,14 +9,17 @@ export const ModuleCard = ({
   onClick,
   topic,
   innerChildren,
+  baseModule,
 }) => {
+  const router = useRouter();
+
   const handleSelect = () => {
     onClick(topic);
   };
 
   const handleReset = (event) => {
     event.stopPropagation();
-    onClick("");
+    router.push(`/modules/${baseModule}`);
   };
 
   return (
