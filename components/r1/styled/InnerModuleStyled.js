@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const InnerModuleStyled = styled.div`
   padding: 2rem 2rem 0;
+  font-family: serif;
+  font-size: 1.15rem;
 
   .block {
     width: 75%;
@@ -27,9 +29,12 @@ export const InnerModuleStyled = styled.div`
     align-items: center;
 
     a {
-      height: 18px;
       margin-left: 0.5rem;
-      color: red;
     }
+  }
+
+  a {
+    height: 18px;
+    color: red;
   }
 `;
