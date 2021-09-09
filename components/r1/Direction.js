@@ -12,6 +12,7 @@ export const Direction = ({ onClick, selected }) => {
       onClick={onClick}
       topic="direction"
       selected={selected}
+      baseModule="rendering-one"
       innerChildren={<InnerDirection />}
     >
       <div className={styles.card_container}>Direction Coming Soon</div>

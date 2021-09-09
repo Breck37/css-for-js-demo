@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Page from "../../components/Page";
+import Page from "../../../components/Page";
 import styled from "styled-components";
 import {
   BoxModel,
@@ -8,48 +8,25 @@ import {
   FlowLayout,
   Inheritance,
   MarginCollapse,
-} from "../../components/r1";
+} from "../../../components/r1";
+import { useRouter } from "next/router";
+import R1 from "../../../components/r1";
 
 const RenderingOne = () => {
-  const [selected, setSelected] = useState("");
-
-  const checkSelected = (component) => {
-    return Boolean(selected === component);
-  };
+  const router = useRouter();
 
   const handlePick = (selectedTopic) => {
-    setSelected(selectedTopic);
+    router.push(`/modules/rendering-one/${selectedTopic}`, undefined, {
+      shallow: true,
+    });
+    console.log(router.query);
   };
 
   return (
     <Page>
       <ROneStyled>
         <h1>Rendering Logic One</h1>
-        <div>
-          <ul>
-            <Inheritance
-              selected={checkSelected("inheritance")}
-              onClick={handlePick}
-            />
-            <Cascade selected={checkSelected("cascade")} onClick={handlePick} />
-            <Direction
-              selected={checkSelected("direction")}
-              onClick={handlePick}
-            />
-            <BoxModel
-              selected={checkSelected("boxmodel")}
-              onClick={handlePick}
-            />
-            <FlowLayout
-              selected={checkSelected("flowlayout")}
-              onClick={handlePick}
-            />
-            <MarginCollapse
-              selected={checkSelected("margincollapse")}
-              onClick={handlePick}
-            />
-          </ul>
-        </div>
+        <R1 handlePick={handlePick} />
       </ROneStyled>
     </Page>
   );
@@ -68,8 +45,6 @@ const ROneStyled = styled.div`
   }
 
   > div {
-    // height: calc(100% - 82px);
-
     > ul {
       height: calc(100% - 6rem);
       overflow-y: scroll;

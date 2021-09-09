@@ -7,11 +7,13 @@ const InnerCascade = () => {
 };
 
 export const Cascade = ({ onClick, selected }) => {
+  console.log("IN CASCADE");
   return (
     <ModuleCard
       onClick={onClick}
       topic="cascade"
       selected={selected}
+      baseModule="rendering-one"
       innerChildren={<InnerCascade />}
     >
       <div className={styles.card_container}>Cascade Coming Soon</div>
