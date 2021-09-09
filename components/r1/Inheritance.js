@@ -1,10 +1,8 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styles from "../../styles/Components.module.css";
 import { ModuleCard } from "../ModuleCard";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import styled from "styled-components";
-import { useRouter } from "next/router";
-import { getParam } from "../../utils/get-param";
 
 const listOfInheritedProperties = [
   "border-collapse",
@@ -51,14 +49,26 @@ const InnerInheritance = () => {
     <InnerInheritanceStyled>
       <div className="block one">
         Inheritable properties will apply to children and grand children and so
-        on.
+        on, most of which are font related. (Its a DX thing)
+        <div className="code">
+          <SyntaxHighlighter language="javascript" showLineNumbers={true}>
+            {`
+              <p>
+                I know <em>you</em> are but what am I?
+              <p>
+            `}
+          </SyntaxHighlighter>
+        </div>
       </div>
       <div className="block two">
-        <p>Only Certain Properties (border vs font-size)</p>
-        <p> Complete List </p>
+        <p>Only Certain Properties are inheritable (border vs font-size):</p>
+        <a target="_blank" href="https://gist.github.com/dcneiner/1137601">
+          {" "}
+          Complete List
+        </a>
       </div>
       <div className="block three">
-        Prototypal (Mental Model)
+        Prototypal (As a mental model)
         <div className="code">
           <SyntaxHighlighter language="javascript" showLineNumbers={true}>
             {`
@@ -91,7 +101,19 @@ const InnerInheritance = () => {
           </SyntaxHighlighter>
         </div>
       </div>
-      <div className="block four">Inherit Property</div>
+      <div className="block four">
+        Inherit Property
+        <div className="code">
+          <SyntaxHighlighter language="html" showLineNumbers={true}>
+            {`
+            a {
+              color: inherit;
+              text-decoration: inherit;
+            } 
+              `}
+          </SyntaxHighlighter>
+        </div>
+      </div>
     </InnerInheritanceStyled>
   );
 };
@@ -118,14 +140,30 @@ const InnerInheritanceStyled = styled.div`
   .block {
     width: 75%;
     margin: 0 auto;
-    background-color: aqua;
     border-radius: 16px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem 2rem;
     > pre {
       border-radius: 16px;
     }
 
     .code {
       margin: 0 auto;
+    }
+  }
+
+  .block:not(last-child) {
+    margin-bottom: 0;
+  }
+
+  .two {
+    display: flex;
+    align-items: center;
+
+    a {
+      height: 18px;
+      margin-left: 0.5rem;
+      color: red;
     }
   }
 `;
