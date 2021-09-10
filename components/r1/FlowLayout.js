@@ -40,7 +40,7 @@ const InnerFlowLayout = () => {
           `}
         </SyntaxHighlighter>
         <div>
-          <a href="https://jsfiddle.net/breck37/20ajkrco/11/">
+          <a target="_blank" href="https://jsfiddle.net/breck37/20ajkrco/11/">
             Tweak Inline Behavior
           </a>
         </div>
@@ -111,7 +111,7 @@ const InnerFlowLayout = () => {
             `}
           </SyntaxHighlighter>
           <div>
-            <a href="https://jsfiddle.net/breck37/ru4cgLxd/1/">
+            <a target="_blank" href="https://jsfiddle.net/breck37/ru4cgLxd/1/">
               Width Exercise
             </a>
           </div>

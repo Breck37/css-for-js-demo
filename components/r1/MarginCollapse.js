@@ -72,7 +72,9 @@ const InnerMarginCollapse = () => {
             * Can also involve negative margins
           `}</SyntaxHighlighter>
 
-          <a href="https://jsfiddle.net/breck37/60u7p1gr/44/" />
+          <a target="_blank" href="https://jsfiddle.net/breck37/60u7p1gr/44/">
+            Rules Exercise
+          </a>
         </div>
       </div>
 
