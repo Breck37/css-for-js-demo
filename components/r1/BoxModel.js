@@ -187,7 +187,7 @@ export const BoxModel = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerBoxModel />}
     >
-      <div className={styles.card_container}>BoxModel</div>
+      <div className={styles.card_container}>Box Model</div>
     </ModuleCard>
   );
 };

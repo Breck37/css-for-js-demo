@@ -8,6 +8,7 @@ const InnerDirection = () => {
   return (
     <InnerModuleStyled>
       <div className="block">
+        <h1>Direction</h1>
         In general, CSS mechanics and terms are "inherited" from the print world
         (e.g Margin / Padding)
       </div>

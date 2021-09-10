@@ -62,6 +62,7 @@ const ModuleCardStyled = styled.li`
 
   &:hover {
     transform: ${({ selected }) => (selected ? "none" : "scale(1.02)")};
+    font-size: 5rem;
   }
 `;
 
