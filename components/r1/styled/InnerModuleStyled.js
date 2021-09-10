@@ -90,4 +90,11 @@ export const InnerModuleStyled = styled.div`
       }
     }
   }
+
+  .subtitle {
+    font-size: 0.875rem;
+    font-style: itallic;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 `;
