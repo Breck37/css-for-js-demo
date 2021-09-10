@@ -11,32 +11,35 @@ const InnerBoxModel = () => {
         <img src="https://tse4.mm.bing.net/th?id=OIP.jEJvpaswiDIwd0skF88H-wHaHa&pid=Api" />
       </div>
       <div className="block">
-        The Box Model
-        <div>
-          <span>Content = Person (the human being inside the coat)</span>
+        <h1>The Box Model</h1>
+        <div className="list">
           <span>
-            Padding = Coat Stuffing (the more stuffing there is, the more
+            <b>Content</b> = Person (the human being inside the coat)
+          </span>
+          <span>
+            <b>Padding</b> = Coat Stuffing (the more stuffing there is, the more
             poofed-up the coat will be, and the more space the person will take
             up)
           </span>
           <span>
-            Border = Coat (It has a thickness and a color, and it affects the
-            person's appearance)
+            <b>Border</b> = Coat (It has a thickness and a color, and it affects
+            the person's appearance)
           </span>
           <span>
-            Margin = Personal Space (as we've learned in recent years, it's good
-            to have 2 meters (6 feet) of space around us)
+            <b>Margin</b> = Personal Space (as we've learned in recent times,
+            its recommended to have 6ft of space around us)
           </span>
         </div>
         <div>
-          Box-sizing: How wide do you want it?
+          <b>Box-sizing:</b> How wide do you want it?
           <div className="image">
             <img src="https://media.giphy.com/media/esR1eKgmOnxWKR627f/giphy.gif" />
           </div>
         </div>
-        <div className="code">
-          <SyntaxHighlighter language="html" showLineNumbers={true}>
-            {`
+        <div className="block">
+          <div className="code">
+            <SyntaxHighlighter language="html" showLineNumbers={true}>
+              {`
               <style>
                 section {
                   width: 500px;
@@ -53,15 +56,19 @@ const InnerBoxModel = () => {
                 <div class="box"></div>
               </section>
 
-              // What are the dimensions?
+              // What are the dimensions of the box class?
             `}
-          </SyntaxHighlighter>
-
-          <div>Answer: 548px x 48px</div>
+            </SyntaxHighlighter>
+            <div className="reveal one">
+              <p>Reveal</p>
+              <div className="answer">Answer: 548px x 48px</div>
+            </div>
+          </div>
         </div>
-        <div className="code">
-          <SyntaxHighlighter language="html" showLineNumbers={true}>
-            {`
+        <div className="block">
+          <div className="code">
+            <SyntaxHighlighter language="html" showLineNumbers={true}>
+              {`
                 <style>
                   * {
                     box-sizing: border-box;
@@ -83,15 +90,19 @@ const InnerBoxModel = () => {
                   <div class="box"></div>
                 </section>
 
-              // What about this one?
+              // What about this one, (box)?
             `}
-          </SyntaxHighlighter>
-
-          <div>Answer: 500px x 250px</div>
+            </SyntaxHighlighter>
+            <div className="reveal two">
+              <p>Reveal</p>
+              <div className="answer">Answer: 500px x 250px</div>
+            </div>
+          </div>
         </div>
-        <div className="code">
-          <SyntaxHighlighter language="html" showLineNumbers={true}>
-            {`
+        <div className="block">
+          <div className="code">
+            <SyntaxHighlighter language="html" showLineNumbers={true}>
+              {`
                 <style>
                   * {
                     box-sizing: border-box;
@@ -110,39 +121,59 @@ const InnerBoxModel = () => {
                   <div class="box"></div>
                 </section>
 
-              // What are the dimensions?
+              // What are the dimensions, (box)?
             `}
+            </SyntaxHighlighter>
+
+            <div className="reveal three">
+              <p>Reveal</p>
+              <div className="answer">Answer: 220px x 0px</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="block">
+        <h3>Random</h3>
+        <div className="code">
+          <SyntaxHighlighter language="css" showLineNumbers={true}>
+            {`
+                Units: px, em, rem
+
+                Shorthand: top / right / bottom / left. ( 0, 0 0, 0 10px 0,
+                0 0 0 10px)
+
+                Overwrites: ( padding: 48px, padding-top: 0px)
+              `}
           </SyntaxHighlighter>
-
-          <div>Answer: 220px x 0px</div>
-        </div>
-      </div>
-
-      <div className="block">
-        Random
-        <div className="code">
-          <div>* Units px, em, rem</div>
-          <div> * shorthand top / right / bottom / left </div>
-          <div>* overwrites ( padding: 48px, padding-top: 0px) </div>
         </div>
       </div>
       <div className="block">
-        Border
+        <h3>Border</h3>
         <div className="code">
-          <div> * Width, Style, Color * style only required field</div>
-          <div>
-            * An outline property can be used the exact same way as a border but
-            it doesn’t affect layout. There is no radius and can be stacked on
-            top of a border.
-          </div>
-          <div>* Outline-offset builds gap between element and outline</div>
-          <div>
-            * `outline: none` shouldn’t be used as it breaks accessibility.
-            There should be focus properties applied when this is needed
-          </div>
+          <SyntaxHighlighter language="css" showLineNumbers={true}>
+            {`
+              Properties: width style color
+
+              Style: only required property
+
+              Outline: used like border but doesn't affect layout 
+              (no radius, can stack with border)
+
+              Outline-offset: build gap between element (including border)
+
+              Outline: 'none' (e.g: outline: 'none') breaks accessibility. 
+              If needed, should be used with focus properties.
+            `}
+            * Width, Style, Color * style only required field * An outline
+            property can be used the exact same way as a border but it doesn’t
+            affect layout. There is no radius and can be stacked on top of a
+            border. * Outline-offset builds gap between element and outline *
+            `outline: none` shouldn’t be used as it breaks accessibility. There
+            should be focus properties applied when this is needed
+          </SyntaxHighlighter>
         </div>
       </div>
-      <div className="block">Margin</div>
     </InnerModuleStyled>
   );
 };
@@ -156,7 +187,7 @@ export const BoxModel = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerBoxModel />}
     >
-      <div className={styles.card_container}>BoxModel Coming Soon</div>
+      <div className={styles.card_container}>BoxModel</div>
     </ModuleCard>
   );
 };
