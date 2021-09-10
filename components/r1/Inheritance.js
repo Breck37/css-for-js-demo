@@ -128,7 +128,9 @@ export const Inheritance = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerInheritance />}
     >
-      <div className={styles.card_container}>Inheritance</div>
+      <div className={styles.card_container}>
+        <p>Inheritance</p>
+      </div>
     </ModuleCard>
   );
 };

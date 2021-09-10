@@ -130,7 +130,9 @@ export const FlowLayout = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerFlowLayout />}
     >
-      <div className={styles.card_container}>Flow Layout</div>
+      <div className={styles.card_container}>
+        <p>Flow Layout</p>
+      </div>
     </ModuleCard>
   );
 };
