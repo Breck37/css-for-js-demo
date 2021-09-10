@@ -101,7 +101,7 @@ export const MarginCollapse = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerMarginCollapse />}
     >
-      <div className={styles.card_container}>MarginCollapse Coming Soon</div>
+      <div className={styles.card_container}>Margin Collapse</div>
     </ModuleCard>
   );
 };

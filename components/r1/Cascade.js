@@ -8,6 +8,7 @@ const InnerCascade = () => {
   return (
     <InnerModuleStyled>
       <div className="block">
+        <h1>Cascade</h1>
         The ultimate specificity showdown between two fighters
       </div>
       <div className="block">

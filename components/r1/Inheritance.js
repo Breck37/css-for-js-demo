@@ -48,6 +48,7 @@ const InnerInheritance = () => {
   return (
     <InnerModuleStyled>
       <div className="block one">
+        <h1>Inheritance</h1>
         Inheritable properties will apply to children and grand children and so
         on, most of which are font related. (Its a DX thing)
         <div className="code">
