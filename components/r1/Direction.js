@@ -60,7 +60,7 @@ export const Direction = ({ onClick, selected }) => {
       innerChildren={<InnerDirection />}
     >
       <div className={styles.card_container}>
-        <p>Direction</p>
+        <p className="card-title">Direction</p>
       </div>
     </ModuleCard>
   );

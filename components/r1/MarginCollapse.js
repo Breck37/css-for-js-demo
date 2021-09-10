@@ -29,47 +29,45 @@ const InnerMarginCollapse = () => {
   return (
     <InnerModuleStyled>
       <div className="block">
-        Shared space vs Personal space
+        <h1>Margin Collapse</h1>
+        <h3>Shared space vs Personal space</h3>
         <div className="code">
           <SyntaxHighlighter language="html">
             {`          
-            In the box-model section, we brought up how margin can be similar to
-            personal space and related it to covid and the 6ft of space. If you
-            think about it, if each person has a 6ft bubble - that would mean 12ft
-            of space. Thus, the bubble becomes "shared".
+  In the box-model section, we brought up how margin can be similar to
+  personal space and related it to covid and the 6ft of space. If you
+  think about it, if each person has a 6ft bubble - that would mean 12ft
+  of space. Thus, the bubble becomes "shared".
           `}
           </SyntaxHighlighter>
         </div>
       </div>
       <div className="block">
-        Rules
+        <h3>Rules</h3>
         <div className="code">
-          <SyntaxHighlighter>{`
-            * Only Vertical Marins Collapse
-              (In the early days, CSS wasn't intended to be used for layouts. 
-              The people writing the spec were imagining headings and paragraphs, 
-              not columns and sidebars. So they decided horizontal shouldn't collapse)
+          <SyntaxHighlighter language="html">{`
+  * Only Vertical Marins Collapse
+    (In the early days, CSS wasn't intended to be used for layouts. 
+    The people writing the spec were imagining headings and paragraphs, 
+    not columns and sidebars. So they decided horizontal 
+    shouldn't collapse)
 
-            * Only collapse in Flow layout (position, grid, flex)
+  * Only collapse in Flow layout (position, grid, flex)
 
-            * Bigger margin wins
+  * Bigger margin wins
 
-            * Blocked by padding / border
+  * Blocked by padding / border
 
-            * Blocked by gap 
+  * Blocked by gap 
 
-            * Must be touching to consititute collapse
+  * Must be touching to consititute collapse
 
-            * Can collapse in same direction
-              (0px margin is still a collapsible margin. 
-              
-              Each section has 0px top margin, and it gets combined with the 32px 
-              top margin on the paragraph. 
-              Since 32px is the larger of the two, it wins.)
+  * Can collapse in same direction
+    (0px margin is still a collapsible margin)
 
-            * More than 2 margins can be involved in collapse
+  * More than 2 margins can be involved in collapse
 
-            * Can also involve negative margins
+  * Can also involve negative margins
           `}</SyntaxHighlighter>
 
           <a target="_blank" href="https://jsfiddle.net/breck37/60u7p1gr/44/">
@@ -79,8 +77,8 @@ const InnerMarginCollapse = () => {
       </div>
 
       <div className="block">
-        Braid Concept
-        <div className="detail">
+        <h3>Braid Concept</h3>
+        <div className="code">
           Solution for handling these tricks? Look no further than our very own
           Stack component... Or, take a look at the{" "}
           <a href="https://seek-oss.github.io/braid-design-system/">
@@ -101,7 +99,9 @@ export const MarginCollapse = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerMarginCollapse />}
     >
-      <div className={styles.card_container}>Margin Collapse</div>
+      <div className={styles.card_container}>
+        <p className="card-title">Margin Collapse</p>
+      </div>
     </ModuleCard>
   );
 };
