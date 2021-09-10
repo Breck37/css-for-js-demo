@@ -188,7 +188,7 @@ export const BoxModel = ({ onClick, selected }) => {
       innerChildren={<InnerBoxModel />}
     >
       <div className={styles.card_container}>
-        <p>Box Model</p>
+        <p className="card-title">Box Model</p>
       </div>
     </ModuleCard>
   );

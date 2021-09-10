@@ -39,7 +39,7 @@ const ModuleCardStyled = styled.li`
   width: 100%;
   height: 100%;
   min-height: 250px;
-  max-height: 250px;
+  max-height: ${({ selected }) => !selected && "250px"};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,10 @@ const ModuleCardStyled = styled.li`
 
   &:hover {
     transform: ${({ selected }) => (selected ? "none" : "scale(1.02)")};
-    font-size: 5rem;
+
+    p.card-title {
+      font-size: 4rem;
+    }
   }
 `;
 

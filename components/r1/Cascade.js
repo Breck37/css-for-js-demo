@@ -68,7 +68,7 @@ export const Cascade = ({ onClick, selected }) => {
       innerChildren={<InnerCascade />}
     >
       <div className={styles.card_container}>
-        <p>Cascade</p>
+        <p className="card-title">Cascade</p>
       </div>
     </ModuleCard>
   );
