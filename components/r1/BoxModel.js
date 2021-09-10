@@ -4,33 +4,6 @@ import styles from "../../styles/Components.module.css";
 import { ModuleCard } from "../ModuleCard";
 import { InnerModuleStyled } from "./styled/InnerModuleStyled";
 
-// _Box Model_
-//       * Content (Person) / Padding (Coat stuffing) / Border (coat) / Margin (Personal Space)
-//       * Box-sizing
-//       * border-box vs content-box quiz
-
-// * _Padding_
-//       * Inner space
-//       * Units px, em, rem
-//       * shorthand top / right / bottom / left
-//       * overwrites ( padding: 48px, padding-top: 0px; )
-
-// * _Border_
-//       * Width, Style, Color
-//       * style only required field
-//       * Fonts color by default (currentColor explicitly)
-//       * Border Radius corners vs sides
-//       * An outline property can be used the exact same way as a border but it doesn’t affect layout. There is no radius and can be stacked on top of a border.
-//       * Outline-offset builds gap between element and outline
-//       * `outline: none` shouldn’t be used as it breaks accessibility. There should be focus properties applied when this is needed
-
-// * _Margin_
-//       * Pits against two fighters (p tag with a class / Specificity)
-//      Exercise
-//           - card wrapper with padding,
-//           - p tags with content
-// 	  - image width 100% (images are replaced/embedded elements, videos/canvas)
-
 const InnerBoxModel = () => {
   return (
     <InnerModuleStyled>
@@ -57,11 +30,8 @@ const InnerBoxModel = () => {
         </div>
         <div>
           Box-sizing: How wide do you want it?
-          <div>
-            <img
-              style={{ height: 50, width: 50 }}
-              src="https://media.giphy.com/media/esR1eKgmOnxWKR627f/giphy.gif"
-            />
+          <div className="image">
+            <img src="https://media.giphy.com/media/esR1eKgmOnxWKR627f/giphy.gif" />
           </div>
         </div>
         <div className="code">
