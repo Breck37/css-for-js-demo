@@ -67,7 +67,9 @@ export const Cascade = ({ onClick, selected }) => {
       baseModule="rendering-one"
       innerChildren={<InnerCascade />}
     >
-      <div className={styles.card_container}>Cascade</div>
+      <div className={styles.card_container}>
+        <p>Cascade</p>
+      </div>
     </ModuleCard>
   );
 };

@@ -39,6 +39,7 @@ const ModuleCardStyled = styled.li`
   width: 100%;
   height: 100%;
   min-height: 250px;
+  max-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +53,7 @@ const ModuleCardStyled = styled.li`
   cursor: ${({ selected }) => (selected ? "default" : "pointer")};
   z-index: ${({ selected }) => (selected ? 10000 : 1)};
   transition: position 0.3s;
-  padding: 2rem;
+  padding: 2.375rem;
 
   .title {
     display: ${({ selected }) => (selected ? "none" : "flex")};
