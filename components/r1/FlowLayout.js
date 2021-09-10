@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/Components.module.css";
 import { ModuleCard } from "../ModuleCard";
-import { InnerModuleStyled } from "./styled/InnerModuleStyled";
+import { InnerModuleStyled } from "../styled/InnerModuleStyled";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 const InnerFlowLayout = () => {
