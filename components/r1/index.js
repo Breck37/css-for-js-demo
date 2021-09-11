@@ -7,7 +7,7 @@ import { Direction } from "./Direction";
 import { BoxModel } from "./BoxModel";
 import { FlowLayout } from "./FlowLayout";
 import { MarginCollapse } from "./MarginCollapse";
-import ModuleContainer from "./styled/ModuleContainer";
+import ModuleContainer from "../styled/ModuleContainer";
 
 export default function R1({ handlePick }) {
   const router = useRouter();

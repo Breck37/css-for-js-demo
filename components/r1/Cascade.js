@@ -2,7 +2,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import styles from "../../styles/Components.module.css";
 import { ModuleCard } from "../ModuleCard";
-import { InnerModuleStyled } from "./styled/InnerModuleStyled";
+import { InnerModuleStyled } from "../styled/InnerModuleStyled";
 
 const InnerCascade = () => {
   return (

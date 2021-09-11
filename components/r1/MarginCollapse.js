@@ -2,7 +2,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import styles from "../../styles/Components.module.css";
 import { ModuleCard } from "../ModuleCard";
-import { InnerModuleStyled } from "./styled/InnerModuleStyled";
+import { InnerModuleStyled } from "../styled/InnerModuleStyled";
 
 // *  Earlier, we talked about how margin is akin to "personal space"; with COVID, we need to keep 6 feet away from other folks.
 // When we think about it, though, that 6 feet can be "shared". If each person has a 6-foot bubble, we don't actually need to be 12 feet away!
