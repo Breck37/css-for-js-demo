@@ -13,7 +13,6 @@ export default function R1({ handlePick }) {
   const router = useRouter();
   const { query } = router;
   const module = getParam({ query, key: "module" });
-  console.log("in R1", { module, query });
 
   return (
     <ModuleContainer>

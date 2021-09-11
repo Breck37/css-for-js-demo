@@ -58,7 +58,6 @@ const InnerCascade = () => {
 };
 
 export const Cascade = ({ onClick, selected }) => {
-  console.log("IN CASCADE");
   return (
     <ModuleCard
       onClick={onClick}
