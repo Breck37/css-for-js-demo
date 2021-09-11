@@ -24,8 +24,7 @@ export default function Home() {
             <LinkItem label="Rendering Logic 2" route="/" comingSoon={true} />
             <LinkItem
               label="Modern Component Architecture"
-              route="/"
-              comingSoon={true}
+              route="/modules/rendering-two"
             />
             <LinkItem label="Flexbox" route="/" comingSoon={true} />
             <LinkItem
