@@ -19,7 +19,6 @@ const RenderingOne = () => {
     router.push(`/modules/rendering-one/${selectedTopic}`, undefined, {
       shallow: true,
     });
-    console.log(router.query);
   };
 
   return (
