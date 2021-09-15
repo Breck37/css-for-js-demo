@@ -30,11 +30,22 @@ const InnerBoxModel = () => {
             its recommended to have 6ft of space around us)
           </span>
         </div>
-        <div>
-          <h3>Box-sizing: How wide do you want it?</h3>
+        <div className="block">
+          <b>Box-sizing:</b> How wide do you want it?
           <div className="image">
             <img src="https://media.giphy.com/media/esR1eKgmOnxWKR627f/giphy.gif" />
           </div>
+          <SyntaxHighlighter language="javascript" showLineNumbers={true}>
+            {`
+  Default: 'content-box'; 
+    // Given width concerns content only
+
+  Alternative: 'border-box'; 
+    // Given width concerns entire element
+    // Based on parents given space
+  
+              `}
+          </SyntaxHighlighter>
         </div>
         <div className="block">
           <div className="code">
@@ -56,12 +67,18 @@ const InnerBoxModel = () => {
     <div class="box"></div>
   </section>
 
-  // What are the dimensions of .boxs?
+  // What are the dimensions of .box?
             `}
             </SyntaxHighlighter>
             <div className="reveal one">
               <p>Reveal</p>
               <div className="answer">Answer: 548px x 48px</div>
+              <a
+                target="_blank"
+                href="https://jsfiddle.net/breck37/cmxrn1hL/2/"
+              >
+                Exercise 1
+              </a>
             </div>
           </div>
         </div>
@@ -90,12 +107,18 @@ const InnerBoxModel = () => {
     <div class="box"></div>
   </section>
 
-  // What about this one, (box)?
+  // What about this one, (.box)?
             `}
             </SyntaxHighlighter>
             <div className="reveal two">
               <p>Reveal</p>
               <div className="answer">Answer: 500px x 250px</div>
+              <a
+                target="_blank"
+                href="https://jsfiddle.net/breck37/rfz8k6n4/4/"
+              >
+                Exercise 2
+              </a>
             </div>
           </div>
         </div>
@@ -121,13 +144,19 @@ const InnerBoxModel = () => {
     <div class="box"></div>
   </section>
 
-  // What are the dimensions, (box)?
+  // What are the dimensions, (.box)?
             `}
             </SyntaxHighlighter>
 
             <div className="reveal three">
               <p>Reveal</p>
               <div className="answer">Answer: 220px x 0px</div>
+              <a
+                target="_blank"
+                href="https://jsfiddle.net/breck37/2wj89vxp/2/"
+              >
+                Exercise 3
+              </a>
             </div>
           </div>
         </div>
@@ -153,7 +182,7 @@ const InnerBoxModel = () => {
         <div className="code">
           <SyntaxHighlighter language="css" showLineNumbers={true}>
             {`
-  Properties: width style color
+  Properties: width / style / color
 
   Style: only required property
 
