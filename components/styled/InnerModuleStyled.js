@@ -75,15 +75,21 @@ export const InnerModuleStyled = styled.div`
 
   .reveal {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 3rem;
     > p {
       margin: 0;
+    }
+    > div > a {
+      display: none;
     }
 
     &:hover {
       text-align: center;
-      > div.answer {
+      > div.answer,
+      > div > a {
         display: block;
       }
       > p {

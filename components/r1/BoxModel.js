@@ -73,12 +73,14 @@ const InnerBoxModel = () => {
             <div className="reveal one">
               <p>Reveal</p>
               <div className="answer">Answer: 548px x 48px</div>
-              <a
-                target="_blank"
-                href="https://jsfiddle.net/breck37/cmxrn1hL/2/"
-              >
-                Exercise 1
-              </a>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://jsfiddle.net/breck37/cmxrn1hL/2/"
+                >
+                  Exercise 1
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -113,12 +115,14 @@ const InnerBoxModel = () => {
             <div className="reveal two">
               <p>Reveal</p>
               <div className="answer">Answer: 500px x 250px</div>
-              <a
-                target="_blank"
-                href="https://jsfiddle.net/breck37/rfz8k6n4/4/"
-              >
-                Exercise 2
-              </a>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://jsfiddle.net/breck37/rfz8k6n4/4/"
+                >
+                  Exercise 2
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -151,12 +155,14 @@ const InnerBoxModel = () => {
             <div className="reveal three">
               <p>Reveal</p>
               <div className="answer">Answer: 220px x 0px</div>
-              <a
-                target="_blank"
-                href="https://jsfiddle.net/breck37/2wj89vxp/2/"
-              >
-                Exercise 3
-              </a>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://jsfiddle.net/breck37/2wj89vxp/2/"
+                >
+                  Exercise 3
+                </a>
+              </div>
             </div>
           </div>
         </div>
