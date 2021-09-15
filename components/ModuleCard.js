@@ -14,6 +14,7 @@ export const ModuleCard = ({
   const router = useRouter();
 
   const handleSelect = () => {
+    if (!onClick) return;
     onClick(topic);
   };
 
@@ -27,7 +28,9 @@ export const ModuleCard = ({
       <CloseWrap selected={selected} onClick={handleReset}>
         <Close />
       </CloseWrap>
-      <ChildrenWrap selected={selected}>{children}</ChildrenWrap>
+      <ChildrenWrap className="children" selected={selected}>
+        {children}
+      </ChildrenWrap>
       <ContentWrap selected={selected}>
         <InnerWrap>{innerChildren}</InnerWrap>
       </ContentWrap>
@@ -53,7 +56,8 @@ const ModuleCardStyled = styled.li`
   cursor: ${({ selected }) => (selected ? "default" : "pointer")};
   z-index: ${({ selected }) => (selected ? 10000 : 1)};
   transition: position 0.3s;
-  padding: 2.375rem;
+  padding: ${({ selected }) => (selected ? "2.375rem" : 0)};
+  border-radius: 8px;
 
   .title {
     display: ${({ selected }) => (selected ? "none" : "flex")};
@@ -62,16 +66,23 @@ const ModuleCardStyled = styled.li`
   }
 
   &:hover {
-    transform: ${({ selected }) => (selected ? "none" : "scale(1.02)")};
+    transform: ${({ selected }) => (selected ? "none" : "scale(1.04)")};
+    background-color: ${({ selected }) =>
+      selected ? "rgba(0,0,0,0.8)" : "#454dcc90"};
+  }
 
-    p.card-title {
-      font-size: 4rem;
-    }
+  &:hover .children {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
   }
 `;
 
 const ChildrenWrap = styled.div`
   display: ${({ selected }) => (selected ? "none" : "block")};
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 `;
 
 const CloseWrap = styled.div`
