@@ -16,22 +16,22 @@ const InnerCascade = () => {
         <div className="code">
           <SyntaxHighlighter language="html" showLineNumbers={true}>
             {`
-            <style>
-                p {
-                  font-weight: bold;
-                  color: hsl(0deg 0% 10%);
-                }
+  <style>
+      p {
+        font-weight: bold;
+        color: hsl(0deg 0% 10%);
+      }
 
-                .introduction {
-                  color: violet;
-                }
-            </style>
+      .introduction {
+        color: violet;
+      }
+  </style>
 
-            <p class="introduction">
-              Hello world
-            </p>
-            
-            // Why does violet win?...
+  <p class="introduction">
+    Hello world
+  </p>
+  
+  // Why does violet win?...
             `}
           </SyntaxHighlighter>
         </div>
@@ -41,14 +41,14 @@ const InnerCascade = () => {
         <div className="code">
           <SyntaxHighlighter language="javascript" showLineNumbers={true}>
             {`
-              const stylesToApply = {
-                ...inheritedStyles, // color, font-size, etc
-                ...tagStyles, // p, div, body, etc
-                ...classStyles, // .class
-                ...idStyles, // #class
-                ...inlineStyles, // style=""
-                ...importantStyles, // !important
-              }
+  const stylesToApply = {
+    ...inheritedStyles, // color, font-size, etc
+    ...tagStyles, // p, div, body, etc
+    ...classStyles, // .class
+    ...idStyles, // #class
+    ...inlineStyles, // style=""
+    ...importantStyles, // !important
+  }
             `}
           </SyntaxHighlighter>
         </div>

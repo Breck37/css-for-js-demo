@@ -31,7 +31,7 @@ const InnerBoxModel = () => {
           </span>
         </div>
         <div>
-          <b>Box-sizing:</b> How wide do you want it?
+          <h3>Box-sizing: How wide do you want it?</h3>
           <div className="image">
             <img src="https://media.giphy.com/media/esR1eKgmOnxWKR627f/giphy.gif" />
           </div>
@@ -40,23 +40,23 @@ const InnerBoxModel = () => {
           <div className="code">
             <SyntaxHighlighter language="html" showLineNumbers={true}>
               {`
-              <style>
-                section {
-                  width: 500px;
-                }
-                .box {
-                  width: 100%;
-                  padding: 20px;
-                  border: 4px solid;
-                }
+  <style>
+    section {
+      width: 500px;
+    }
+    .box {
+      width: 100%;
+      padding: 20px;
+      border: 4px solid;
+    }
 
-              </style>
+  </style>
 
-              <section>
-                <div class="box"></div>
-              </section>
+  <section>
+    <div class="box"></div>
+  </section>
 
-              // What are the dimensions of the box class?
+  // What are the dimensions of .boxs?
             `}
             </SyntaxHighlighter>
             <div className="reveal one">
@@ -69,28 +69,28 @@ const InnerBoxModel = () => {
           <div className="code">
             <SyntaxHighlighter language="html" showLineNumbers={true}>
               {`
-                <style>
-                  * {
-                    box-sizing: border-box;
-                  }
-                  section {
-                    width: 500px;
-                    height: 250px;
-                  }
-                  .box {
-                    width: 100%;
-                    height: 100%;
-                    padding: 30px;
-                    border: 4px solid;
-                    margin: 20px;
-                  }
-                </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    section {
+      width: 500px;
+      height: 250px;
+    }
+    .box {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      border: 4px solid;
+      margin: 20px;
+    }
+  </style>
 
-                <section>
-                  <div class="box"></div>
-                </section>
+  <section>
+    <div class="box"></div>
+  </section>
 
-              // What about this one, (box)?
+  // What about this one, (box)?
             `}
             </SyntaxHighlighter>
             <div className="reveal two">
@@ -103,25 +103,25 @@ const InnerBoxModel = () => {
           <div className="code">
             <SyntaxHighlighter language="html" showLineNumbers={true}>
               {`
-                <style>
-                  * {
-                    box-sizing: border-box;
-                  }
-                  section {
-                    width: 500px;
-                    padding: 30px;
-                  }
-                  .box {
-                    width: 50%;
-                    height: 100%;
-                  }
-                </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    section {
+      width: 500px;
+      padding: 30px;
+    }
+    .box {
+      width: 50%;
+      height: 100%;
+    }
+  </style>
 
-                <section>
-                  <div class="box"></div>
-                </section>
+  <section>
+    <div class="box"></div>
+  </section>
 
-              // What are the dimensions, (box)?
+  // What are the dimensions, (box)?
             `}
             </SyntaxHighlighter>
 
@@ -138,12 +138,12 @@ const InnerBoxModel = () => {
         <div className="code">
           <SyntaxHighlighter language="css" showLineNumbers={true}>
             {`
-                Units: px, em, rem
+  Units: px, em, rem
 
-                Shorthand: top / right / bottom / left. ( 0, 0 0, 0 10px 0,
-                0 0 0 10px)
+  Shorthand: top / right / bottom / left. ( 0, 0 0, 0 10px 0,
+  0 0 0 10px)
 
-                Overwrites: ( padding: 48px, padding-top: 0px)
+  Overwrites: ( padding: 48px, padding-top: 0px)
               `}
           </SyntaxHighlighter>
         </div>
@@ -153,24 +153,18 @@ const InnerBoxModel = () => {
         <div className="code">
           <SyntaxHighlighter language="css" showLineNumbers={true}>
             {`
-              Properties: width style color
+  Properties: width style color
 
-              Style: only required property
+  Style: only required property
 
-              Outline: used like border but doesn't affect layout 
-              (no radius, can stack with border)
+  Outline: used like border but doesn't affect layout 
+  (no radius, can stack with border)
 
-              Outline-offset: build gap between element (including border)
+  Outline-offset: build gap between element (including border)
 
-              Outline: 'none' (e.g: outline: 'none') breaks accessibility. 
-              If needed, should be used with focus properties.
+  Outline: 'none' (e.g: outline: 'none') breaks accessibility. 
+  If needed, should be used with focus properties.
             `}
-            * Width, Style, Color * style only required field * An outline
-            property can be used the exact same way as a border but it doesn’t
-            affect layout. There is no radius and can be stacked on top of a
-            border. * Outline-offset builds gap between element and outline *
-            `outline: none` shouldn’t be used as it breaks accessibility. There
-            should be focus properties applied when this is needed
           </SyntaxHighlighter>
         </div>
       </div>

@@ -28,20 +28,20 @@ const InnerDirection = () => {
         <div className="code">
           <SyntaxHighligher language="css" showLineNumbers={true}>
             {`  
-              p {
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-              }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 
-              * There are logical variants for padding, border, 
-              and overflow as well. 
+  * There are logical variants for padding, 
+  border, and overflow as well. 
 
-              * By using these properties, your alignments 
-              can be dynamic depending on user language. 
-              (e.g Arabic will be inverse)
+  * By using these properties, your alignments 
+  can be dynamic depending on user language. 
+  (e.g Arabic will be inverse)
             `}
           </SyntaxHighligher>
         </div>

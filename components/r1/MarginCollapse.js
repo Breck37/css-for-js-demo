@@ -46,7 +46,7 @@ const InnerMarginCollapse = () => {
         <h3>Rules</h3>
         <div className="code">
           <SyntaxHighlighter language="html">{`
-  * Only Vertical Marins Collapse
+  * Only Vertical Margins Collapse
     (In the early days, CSS wasn't intended to be used for layouts. 
     The people writing the spec were imagining headings and paragraphs, 
     not columns and sidebars. So they decided horizontal 
@@ -69,10 +69,11 @@ const InnerMarginCollapse = () => {
 
   * Can also involve negative margins
           `}</SyntaxHighlighter>
-
-          <a target="_blank" href="https://jsfiddle.net/breck37/60u7p1gr/47/">
-            Rules Exercise
-          </a>
+          <div className="link">
+            <a target="_blank" href="https://jsfiddle.net/breck37/60u7p1gr/47/">
+              Rules Exercise
+            </a>
+          </div>
         </div>
       </div>
 
@@ -81,9 +82,11 @@ const InnerMarginCollapse = () => {
         <div className="code">
           Solution for handling these tricks? Look no further than our very own
           Stack component... Or, take a look at the{" "}
-          <a href="https://seek-oss.github.io/braid-design-system/">
-            Braid Design system
-          </a>
+          <div className="link">
+            <a href="https://seek-oss.github.io/braid-design-system/">
+              Braid Design system
+            </a>
+          </div>
         </div>
       </div>
     </InnerModuleStyled>
