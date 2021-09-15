@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import Page from "../../../components/Page";
 import styled from "styled-components";
-import {
-  BoxModel,
-  Cascade,
-  Direction,
-  FlowLayout,
-  Inheritance,
-  MarginCollapse,
-} from "../../../components/r1";
 import { useRouter } from "next/router";
 import R1 from "../../../components/r1";
 
@@ -69,6 +61,23 @@ const ROneStyled = styled.div`
           5px 5px 15px 5px rgba(0, 0, 0, 0);
         box-shadow: 0px 10px 13px -7px #000000,
           5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 2rem;
+    > div {
+      > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > li {
+          width: 100%;
+          height: 4rem;
+        }
       }
     }
   }
