@@ -33,13 +33,14 @@ export const InnerModuleStyled = styled.div`
   .list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 
     > span {
       margin-bottom: 0.5rem;
     }
   }
 
-  .block:not(:last-child) {
+  .block:last-child {
     margin-bottom: 0;
   }
 
@@ -96,5 +97,20 @@ export const InnerModuleStyled = styled.div`
     font-style: itallic;
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 800px) {
+    padding: 2rem 0.5rem;
+
+    .block {
+      width: 90%;
+      margin-bottom: 0;
+    }
   }
 `;
