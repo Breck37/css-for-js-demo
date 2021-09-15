@@ -114,6 +114,9 @@ const InnerInheritance = () => {
               `}
           </SyntaxHighlighter>
         </div>
+        <a target="_blank" href="https://jsfiddle.net/breck37/3jo0wamd/6/">
+          Inheritance
+        </a>
       </div>
     </InnerModuleStyled>
   );

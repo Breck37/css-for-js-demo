@@ -41,9 +41,13 @@ const InnerDirection = () => {
 
   * By using these properties, your alignments 
   can be dynamic depending on user language. 
-  (e.g Arabic will be inverse)
+  (e.g Arabic will be inverse, think 
+  flex-direction: row-reverse)
             `}
           </SyntaxHighligher>
+          <a target="_blank" href="https://jsfiddle.net/breck37/z961307k/4/">
+            Logical Properties Exercise
+          </a>
         </div>
       </div>
     </InnerModuleStyled>

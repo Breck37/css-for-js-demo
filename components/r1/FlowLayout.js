@@ -111,7 +111,7 @@ const InnerFlowLayout = () => {
             `}
           </SyntaxHighlighter>
           <div className="link">
-            <a target="_blank" href="https://jsfiddle.net/breck37/ru4cgLxd/1/">
+            <a target="_blank" href="https://jsfiddle.net/breck37/ru4cgLxd/20/">
               Width Exercise
             </a>
           </div>

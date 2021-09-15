@@ -51,6 +51,9 @@ const InnerCascade = () => {
   }
             `}
           </SyntaxHighlighter>
+          <a target="_blank" href="https://jsfiddle.net/breck37/ankvp5w4/3/">
+            Inheritance
+          </a>
         </div>
       </div>
     </InnerModuleStyled>
