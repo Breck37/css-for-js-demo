@@ -54,9 +54,9 @@ const InnerInheritance = () => {
         <div className="code">
           <SyntaxHighlighter language="javascript" showLineNumbers={true}>
             {`
-              <p>
-                I know <em>you</em> are but what am I?
-              <p>
+  <p>
+    I know <em>you</em> are but what am I?
+  <p>
             `}
           </SyntaxHighlighter>
         </div>
@@ -73,19 +73,19 @@ const InnerInheritance = () => {
         <div className="code">
           <SyntaxHighlighter language="javascript" showLineNumbers={true}>
             {`
-              class Main {
-                color = "black"
-              }
-              
-              class Paragraph extends Main {
-                backgroundColor = "red"
-              }
-              
-              class Span extends Paragraph {}
-              
-              const s = new Span(); 
-              
-              console.log(s.color)
+  class Main {
+    color = "black"
+  }
+  
+  class Paragraph extends Main {
+    backgroundColor = "red"
+  }
+  
+  class Span extends Paragraph {}
+  
+  const s = new Span(); 
+  
+  console.log(s.color)
             `}
           </SyntaxHighlighter>
         </div>
@@ -93,11 +93,11 @@ const InnerInheritance = () => {
         <div className="code">
           <SyntaxHighlighter language="html" showLineNumbers={true}>
             {`
-                <main style="color: black;">
-                  <p style="color: red;">
-                    Hello <span> World</span>
-                  </p>
-                </main>
+  <main style="color: black;">
+    <p style="color: red;">
+      Hello <span> World</span>
+    </p>
+  </main>
               `}
           </SyntaxHighlighter>
         </div>
@@ -105,12 +105,12 @@ const InnerInheritance = () => {
       <div className="block four">
         Inherit Property
         <div className="code">
-          <SyntaxHighlighter language="html" showLineNumbers={true}>
+          <SyntaxHighlighter language="css" showLineNumbers={true}>
             {`
-            a {
-              color: inherit;
-              text-decoration: inherit;
-            } 
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  } 
               `}
           </SyntaxHighlighter>
         </div>

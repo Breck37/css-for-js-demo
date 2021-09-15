@@ -54,4 +54,14 @@ const HeaderStyled = styled.div`
       }
     }
   }
+
+  @media (max-width: 800px) {
+    > h1 {
+      flex: 3;
+    }
+    > div {
+      width: 35%;
+      justify-content: flex-end;
+    }
+  }
 `;
