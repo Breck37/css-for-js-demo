@@ -1,26 +1,19 @@
 import React, { useEffect, useMemo, useCallback, useState } from "react";
 import ModuleContainer from "../styled/ModuleContainer";
+import Relative from "./Relative";
 
 const R2 = () => {
+  const handlePick = (selectedTopic) => {
+    router.push(`/modules/rendering-two/${selectedTopic}`, undefined, {
+      shallow: true,
+    });
+  };
   return (
-    <div>
-      <ModuleContainer>
-        <ul>
-          <Inheritance
-            selected={module === "inheritance"}
-            onClick={handlePick}
-          />
-          <Cascade selected={module === "cascade"} onClick={handlePick} />
-          <Direction selected={module === "direction"} onClick={handlePick} />
-          <BoxModel selected={module === "boxmodel"} onClick={handlePick} />
-          <FlowLayout selected={module === "flowlayout"} onClick={handlePick} />
-          <MarginCollapse
-            selected={module === "margincollapse"}
-            onClick={handlePick}
-          />
-        </ul>
-      </ModuleContainer>
-    </div>
+    <ModuleContainer>
+      <ul>
+        <Relative selected={module === "relative"} onClick={handlePick} />
+      </ul>
+    </ModuleContainer>
   );
 };
 

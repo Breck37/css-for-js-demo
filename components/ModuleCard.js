@@ -76,6 +76,12 @@ const ModuleCardStyled = styled.li`
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
+
+  @media (max-width: 590px) {
+    min-height: 100px;
+    max-height: ${({ selected }) => (selected ? "100%" : "100px")};
+    padding: 1rem;
+  }
 `;
 
 const ChildrenWrap = styled.div`
