@@ -5,13 +5,19 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <HeaderStyled>
-      <h1>
-        CSS For <strong>Javascript</strong> Devs
-      </h1>
-      <div>
-        <div>
-          <Link href="/">Home</Link>
-        </div>
+      <div className="header-title-wrap">
+        <h1>
+          CSS For <strong>Javascript</strong> Devs
+        </h1>
+        <h6>
+          Based on{" "}
+          <a href="https://courses.joshwcomeau.com/css-for-js">
+            <strong>courses.joshwcomeau.com/css-for-js</strong>
+          </a>
+        </h6>
+      </div>
+      <div className="links">
+        <Link href="/">Home</Link>
       </div>
     </HeaderStyled>
   );
@@ -20,48 +26,43 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.div`
-  position: relative;
   height: 6rem;
   width: 100vw;
   border-bottom: 2px solid #454dcc;
-  padding: 3rem 2rem 1rem;
+  padding: 1rem;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-end;
 
-  > h1 {
-    margin: 0;
-
-    > strong {
-      color: #454dcc;
-      font-style: italic;
-    }
-  }
-
-  > div {
-    height: 100%;
-    width: 40%;
-    margin 0 2rem;
+  .header-title-wrap {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+    flex-direction: column;
 
-    > div {
-      cursor: pointer;
+    h1,
+    h6 {
+      margin: 0;
 
-      &:hover {
+      > strong,
+      a > strong {
         color: #454dcc;
+        font-style: italic;
       }
     }
-  }
 
-  @media (max-width: 800px) {
-    > h1 {
-      flex: 3;
+    h1 {
+      font-size: 1.5rem;
     }
-    > div {
-      width: 35%;
-      justify-content: flex-end;
+
+    h6 {
+      text-align: right;
+    }
+
+    @media (min-width: 800px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   }
 `;
