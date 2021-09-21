@@ -111,12 +111,13 @@ export const InnerModuleStyled = styled.div`
     margin-top: 1rem;
   }
 
-  @media (max-width: 800px) {
-    padding: 2rem 0.5rem;
-
+  @media (max-width: 590px) {
+    padding: 2rem 0 2rem;
+    font-size: 12px;
     .block {
       width: 90%;
-      margin-bottom: 0;
+      padding: 0;
+      text-align: center;
     }
   }
 `;
