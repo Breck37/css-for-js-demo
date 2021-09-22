@@ -30,6 +30,7 @@ const HeaderStyled = styled.div`
   width: 100vw;
   border-bottom: 2px solid #454dcc;
   padding: 1rem;
+  padding-left: 2rem;
   display: flex;
   align-items: flex-end;
 
