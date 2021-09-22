@@ -57,7 +57,7 @@ const ModuleCardStyled = styled.li`
   z-index: ${({ selected }) => (selected ? 10000 : 1)};
   transition: position 0.3s;
   padding: ${({ selected }) => (selected ? "2.375rem" : 0)};
-  border-radius: 8px;
+  border-radius: ${({ selected }) => (selected ? 0 : "0.5rem")};
 
   .title {
     display: ${({ selected }) => (selected ? "none" : "flex")};
@@ -125,7 +125,6 @@ const ContentWrap = styled.div`
 const InnerWrap = styled.div`
   margin: 3.375rem 0 0;
   height: calc(100% - 3.375rem);
-  border-radius: 0.5rem;
   background-color: #fff;
   overflow: hidden;
   overflow-y: scroll;
