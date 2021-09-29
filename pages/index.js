@@ -17,14 +17,15 @@ export default function Home() {
         <div className={styles["table-of-contents"]}>
           <h4>Table of Contents</h4>
           <ul className={styles.nobullet}>
+            <LinkItem label="Rendering Logic" route="/modules/rendering-one" />
             <LinkItem
-              label="Rendering Logic 1"
-              route="/modules/rendering-one"
+              label="Positions"
+              route="/modules/rendering-two"
+              comingSoon={true}
             />
-            <LinkItem label="Rendering Logic 2" route="/" comingSoon={true} />
             <LinkItem
               label="Modern Component Architecture"
-              route="/"
+              route="/modules/rendering-two"
               comingSoon={true}
             />
             <LinkItem label="Flexbox" route="/" comingSoon={true} />
