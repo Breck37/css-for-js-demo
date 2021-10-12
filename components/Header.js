@@ -18,6 +18,7 @@ const Header = () => {
       </div>
       <div className="links">
         <Link href="/">Home</Link>
+        {/* <Link href="/playground">Playground</Link> */}
       </div>
     </HeaderStyled>
   );
@@ -64,6 +65,12 @@ const HeaderStyled = styled.div`
       h1 {
         font-size: 2rem;
       }
+    }
+  }
+
+  .links {
+    a:not(:last-child) {
+      margin-right: 2rem;
     }
   }
 `;
