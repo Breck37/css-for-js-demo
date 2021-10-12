@@ -2,9 +2,9 @@ import React, { useEffect, useMemo, useCallback, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-const LinkItem = ({ label, route, comingSoon }) => {
+const LinkItem = ({ label, route, comingSoon, target = "" }) => {
   return (
-    <Link href={route}>
+    <Link target={target} href={route}>
       <LinkItemStyled comingSoon={comingSoon}>
         {label}{" "}
         {comingSoon ? (
