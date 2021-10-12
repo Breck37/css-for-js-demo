@@ -23,7 +23,11 @@ export default function Home() {
               label="sup"
               route="https://playcode.io/816762"
             /> */}
-            <LinkItem label="Rendering Logic" route="/modules/rendering" />
+            <LinkItem
+              label="Rendering Logic"
+              route="/modules/rendering"
+              comingSoon={true}
+            />
             <LinkItem label="Positions" route="/modules/positions" />
             <LinkItem
               label="Modern Component Architecture"
