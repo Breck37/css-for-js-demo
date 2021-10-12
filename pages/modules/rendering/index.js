@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Page from "../../../components/Page";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import R1 from "../../../components/r1";
+import Rendering from "../../../components/rendering";
 import { OuterModuleStyled } from "../../../components/styled/OuterModuleStyled";
 
 const RenderingOne = () => {
   const router = useRouter();
 
   const handlePick = (selectedTopic) => {
-    router.push(`/modules/rendering-one/${selectedTopic}`, undefined, {
+    router.push(`/modules/rendering/${selectedTopic}`, undefined, {
       shallow: true,
     });
   };
@@ -18,7 +18,7 @@ const RenderingOne = () => {
     <Page>
       <OuterModuleStyled>
         <h1>Rendering Logic One</h1>
-        <R1 handlePick={handlePick} />
+        <Rendering handlePick={handlePick} />
       </OuterModuleStyled>
     </Page>
   );

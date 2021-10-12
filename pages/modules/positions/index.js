@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Page from "../../../components/Page";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import R2 from "../../../components/r2";
+import R2 from "../../../components/positions";
 
-const RenderingTwo = () => {
+const Positions = () => {
   const router = useRouter();
 
   const handlePick = (selectedTopic) => {
-    router.push(`/modules/rendering-two/${selectedTopic}`, undefined, {
+    router.push(`/modules/positions/${selectedTopic}`, undefined, {
       shallow: true,
     });
   };
@@ -16,14 +16,14 @@ const RenderingTwo = () => {
   return (
     <Page>
       <RTwoStyled>
-        <h1>Rendering Logic two</h1>
+        <h1>Positions</h1>
         <R2 handlePick={handlePick} />
       </RTwoStyled>
     </Page>
   );
 };
 
-export default RenderingTwo;
+export default Positions;
 
 const RTwoStyled = styled.div`
   height: 100%;

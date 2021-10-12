@@ -54,13 +54,13 @@ const Positioned = ({ onClick, selected }) => {
   return (
     <ModuleCard
       onClick={onClick}
-      topic="positioned"
+      topic="relative"
       selected={selected}
-      baseModule="rendering-two"
+      baseModule="positions"
       innerChildren={<InnerPositioned />}
     >
       <div className={styles.card_container}>
-        <p className="card-title">Positioned</p>
+        <p className="card-title">Relative</p>
       </div>
     </ModuleCard>
   );

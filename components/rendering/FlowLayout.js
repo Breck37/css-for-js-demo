@@ -127,7 +127,7 @@ export const FlowLayout = ({ onClick, selected }) => {
       onClick={onClick}
       topic="flowlayout"
       selected={selected}
-      baseModule="rendering-one"
+      baseModule="rendering"
       innerChildren={<InnerFlowLayout />}
     >
       <div className={styles.card_container}>

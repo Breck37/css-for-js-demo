@@ -213,7 +213,7 @@ export const BoxModel = ({ onClick, selected }) => {
       onClick={onClick}
       topic="boxmodel"
       selected={selected}
-      baseModule="rendering-one"
+      baseModule="rendering"
       innerChildren={<InnerBoxModel />}
     >
       <div className={styles.card_container}>

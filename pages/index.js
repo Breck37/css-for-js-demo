@@ -16,15 +16,19 @@ export default function Home() {
       <Page>
         <div className={styles["table-of-contents"]}>
           <h4>Table of Contents</h4>
+
           <ul className={styles.nobullet}>
-            <LinkItem
-              label="Rendering Logic 1"
-              route="/modules/rendering-one"
-            />
-            <LinkItem label="Rendering Logic 2" route="/" comingSoon={true} />
+            {/* <LinkItem
+              target="_blank"
+              label="sup"
+              route="https://playcode.io/816762"
+            /> */}
+            <LinkItem label="Rendering Logic" route="/modules/rendering" />
+            <LinkItem label="Positions" route="/modules/positions" />
             <LinkItem
               label="Modern Component Architecture"
-              route="/modules/rendering-two"
+              route="/"
+              comingSoon={true}
             />
             <LinkItem label="Flexbox" route="/" comingSoon={true} />
             <LinkItem

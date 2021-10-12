@@ -120,6 +120,10 @@ const ContentWrap = styled.div`
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const InnerWrap = styled.div`

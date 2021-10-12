@@ -10,7 +10,7 @@ const R2 = () => {
   const module = getParam({ query, key: "module" });
 
   const handlePick = (selectedTopic) => {
-    router.push(`/modules/rendering-two/${selectedTopic}`, undefined, {
+    router.push(`/modules/positions/${selectedTopic}`, undefined, {
       shallow: true,
     });
   };

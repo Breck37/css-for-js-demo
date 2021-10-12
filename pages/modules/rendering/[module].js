@@ -1,4 +1,4 @@
-import R1 from "../../../components/r1";
+import R1 from "../../../components/rendering";
 
 export function Module() {
   return <R1 />;
