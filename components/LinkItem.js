@@ -21,7 +21,8 @@ const LinkItemStyled = styled.li`
   cursor: pointer;
   position: relative;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: ${({ comingSoon }) =>
+    !comingSoon ? "##fff" : "rgba(0,0,0, 0.1)"};
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2rem;
