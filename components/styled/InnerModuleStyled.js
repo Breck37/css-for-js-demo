@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InnerModuleStyled = styled.div`
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 2rem;
   font-family: serif;
   font-size: 1.15rem;
 
@@ -10,7 +10,7 @@ export const InnerModuleStyled = styled.div`
     margin: 0 auto;
     border-radius: 16px;
     margin-bottom: 1.5rem;
-    padding: 1rem 1rem 2rem;
+    padding: 1rem 1rem 0;
     > pre {
       border-radius: 16px;
     }
@@ -27,6 +27,10 @@ export const InnerModuleStyled = styled.div`
 
     .block {
       width: 100%;
+    }
+
+    .link {
+      margin: 0 auto;
     }
   }
 

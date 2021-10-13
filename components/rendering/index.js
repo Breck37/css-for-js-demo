@@ -9,7 +9,7 @@ import { FlowLayout } from "./FlowLayout";
 import { MarginCollapse } from "./MarginCollapse";
 import ModuleContainer from "../styled/ModuleContainer";
 
-export default function R1({ handlePick }) {
+export default function Rendering({ handlePick }) {
   const router = useRouter();
   const { query } = router;
   const module = getParam({ query, key: "module" });

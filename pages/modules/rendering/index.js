@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Rendering from "../../../components/rendering";
 import { OuterModuleStyled } from "../../../components/styled/OuterModuleStyled";
 
-const RenderingOne = () => {
+const RenderingPage = () => {
   const router = useRouter();
 
   const handlePick = (selectedTopic) => {
@@ -24,4 +24,4 @@ const RenderingOne = () => {
   );
 };
 
-export default RenderingOne;
+export default RenderingPage;

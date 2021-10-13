@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Page from "../../../components/Page";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import R2 from "../../../components/positions";
+import Positions from "../../../components/positions";
 
-const Positions = () => {
+const PositionsPage = () => {
   const router = useRouter();
 
   const handlePick = (selectedTopic) => {
@@ -15,17 +15,17 @@ const Positions = () => {
 
   return (
     <Page>
-      <RTwoStyled>
+      <PostitionsStyled>
         <h1>Positions</h1>
-        <R2 handlePick={handlePick} />
-      </RTwoStyled>
+        <Positions handlePick={handlePick} />
+      </PostitionsStyled>
     </Page>
   );
 };
 
-export default Positions;
+export default PositionsPage;
 
-const RTwoStyled = styled.div`
+const PostitionsStyled = styled.div`
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;

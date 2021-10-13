@@ -1,7 +1,7 @@
-import R1 from "../../../components/rendering";
+import Rendering from "../../../components/rendering";
 
-export function Module() {
-  return <R1 />;
+export function RenderingModule() {
+  return <Rendering />;
 }
 
-export default Module;
+export default RenderingModule;
