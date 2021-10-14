@@ -6,7 +6,7 @@ const LinkItem = ({ label, route, comingSoon }) => {
   return (
     <Link href={route}>
       <LinkItemStyled comingSoon={comingSoon}>
-        {label}{" "}
+        <span>{label}</span>
         {comingSoon ? (
           <div className="coming-soon-banner">COMING SOON</div>
         ) : null}
@@ -19,7 +19,6 @@ export default LinkItem;
 
 const LinkItemStyled = styled.li`
   cursor: pointer;
-  position: relative;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -27,12 +26,19 @@ const LinkItemStyled = styled.li`
   padding: 2rem;
   position: relative;
   margin: 0 1rem 1.5rem;
+  flex: 1;
+  min-width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: ${({ comingSoon }) =>
       !comingSoon ? "#454dcc" : "rgba(69, 77, 204, 0.6)"};
     color: white;
-    display: flex;
+    ${({ comingSoon }) => comingSoon && "display: flex"};
+    transition: display 0.3s linear;
 
     > div {
       display: block;
