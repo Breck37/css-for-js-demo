@@ -33,6 +33,11 @@ const LinkItemStyled = styled.li`
   align-items: center;
   justify-content: center;
 
+  > span {
+    font-family: system-ui;
+    font-size: 52px;
+  }
+
   &:hover {
     background-color: ${({ comingSoon }) =>
       !comingSoon ? "#454dcc" : "rgba(69, 77, 204, 0.6)"};
