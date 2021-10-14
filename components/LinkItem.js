@@ -39,6 +39,8 @@ const LinkItemStyled = styled.li`
     color: white;
     ${({ comingSoon }) => comingSoon && "display: flex"};
     transition: display 0.3s linear;
+    align-items: center;
+    justify-content: flex-start;
 
     > div {
       display: block;
