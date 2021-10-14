@@ -23,24 +23,6 @@ export default function Home() {
               route="/modules/rendering-two"
               comingSoon={true}
             />
-            <LinkItem
-              label="Modern Component Architecture"
-              route="/modules/rendering-two"
-              comingSoon={true}
-            />
-            <LinkItem label="Flexbox" route="/" comingSoon={true} />
-            <LinkItem
-              label="Responsive and Behavioural CSS"
-              route="/"
-              comingSoon={true}
-            />
-            <LinkItem
-              label="Typography and Images"
-              route="/"
-              comingSoon={true}
-            />
-            <LinkItem label="CSS Grid" route="/" comingSoon={true} />
-            <LinkItem label="Animations" route="/" comingSoon={true} />
           </ul>
         </div>
       </Page>
