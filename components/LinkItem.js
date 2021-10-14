@@ -37,10 +37,9 @@ const LinkItemStyled = styled.li`
     background-color: ${({ comingSoon }) =>
       !comingSoon ? "#454dcc" : "rgba(69, 77, 204, 0.6)"};
     color: white;
-    ${({ comingSoon }) => comingSoon && "display: flex"};
     transition: display 0.3s linear;
     align-items: center;
-    justify-content: flex-start;
+    ${({ comingSoon }) => comingSoon && "justify-content: flex-start"};
 
     > div {
       display: block;
