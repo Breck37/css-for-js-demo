@@ -35,7 +35,7 @@ const LinkItemStyled = styled.li`
 
   > span {
     font-family: system-ui;
-    font-size: 52px;
+    font-size: 48px;
   }
 
   &:hover {
