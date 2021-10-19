@@ -75,14 +75,14 @@ const skate = keyframes`
 
 const SlashOne = styled.div`
   position: absolute;
-  min-height: 25px;
+  height: 5px;
   background-color: #454dff;
   bottom: 0;
   width: 36%;
   left: -10px;
   transform: skew(-26deg) rotate(-26deg);
   z-index: 50;
-  animation: ${skate} 2s linear infinite;
+  animation: ${skate} 1.5s linear infinite;
 `;
 
 const bounce = keyframes`
@@ -126,17 +126,17 @@ const SlashTwo = styled.div`
   left: -250px;
   bottom: 105px;
   transform: skew(-26deg) rotate(-26deg);
-  animation: ${bounce} 3s linear infinite;
+  animation: ${bounce} 2s linear infinite;
 `;
 
 const SlashThree = styled.div`
   position: absolute;
   min-height: 25px;
   background-color: grey;
-  bottom: 0;
+  bottom: -10px;
   width: 36%;
-  left: -10px;
+  left: -30px;
   transform: skew(-26deg) rotate(-26deg);
   z-index: 50;
-  animation: ${skate} 2s linear infinite 1s;
+  animation: ${skate} 1s linear infinite 0.1s;
 `;
